@@ -1,0 +1,19 @@
+[workspace]
+members = [
+    "xtask",
+    "airlog-sdk", 
+    "airlogd", 
+    "airlog", 
+    "airlog-sdk", 
+    "plugins/debugger", 
+    "plugins/syslog-frontend", 
+    "plugins/textfile-backend",
+]
+resolver = "2"
+
+[workspace.dependencies.tokio]
+version = "1"
+features = ["rt", "rt-multi-thread", "macros"]
+
+[workspace.dependencies.async-trait]
+version = "0.1"
